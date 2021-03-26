@@ -15,8 +15,8 @@ app =Flask(__name__)
 # app.config.from_pyfile['config.cfg']
 # mail=Mail(app)  4
 
-@app.route("/")
-@app.route("/home", methods=['GET','POST'])
+@app.route("/",  methods=['GET','POST'])
+@app.route("/home")
 def index():
     return render_template("home.html")
 
