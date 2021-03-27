@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, request, jsonify
 from flask_mail import Mail, Message
 
 app =Flask(__name__)
+app = create_app()
 # app.config['MAILL_SERVER']='smtp.googlemail.com'
 # app.config['MAIL_PORT']= 465
 # app.config['MAIL_USE_SLL']= True
