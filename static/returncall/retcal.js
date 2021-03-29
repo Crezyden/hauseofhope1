@@ -38,7 +38,7 @@ if(epasts.split("@").length - 1 == 0|| epasts.split(".").length - 1 ==0){
     if ((name !="") && (subject!="") && (mass!="") && (epasts!=""))
         {
        		$.ajax({
-              url: "static/returncall/mail.php",
+              url: "/forms",
         		  type: "POST",
               cahse:  false,
               processData: false,

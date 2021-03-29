@@ -41,29 +41,29 @@ def activity():
 def contacs():
     return render_template("contacts.html")
 
-# @app.route("/forms", methods=['POST'])
-# def forms():
+@app.route("/forms", methods=['POST'])
+def forms():
 
-        # """User sent an email request"""
-        # msg = Message("Feedback", recipients='deniss.kargins@gmail.com')
-        # msg.body = "You have received new feedback from {0} {1} <{2}>.\n\n {3}".format(
-        #     request.form['yourname'],
-        #     request.form['email'],
-        #     request.form['subject'],
-        #     request.form['mess'])
-        # try:
-        #     mail.send(msg)
-        #     msg = "We will respond as soon as possible."
-        #     category = "success"
-        # except Exception as err:
-        #     msg = str(err)
-        #     category = "danger"
-        #
-        # resp = {'feedback': msg, 'category': category}
-        # return make_response(jsonify(resp), 200)
-        #
-        # return render_template('contacts.html')
+        """User sent an email request"""
+        msg = Message("Feedback", recipients='deniss.kargins@gmail.com')
+        msg.body = "You have received new feedback from {0} {1} <{2}>.\n\n {3}".format(
+            request.form['yourname'],
+            request.form['email'],
+            request.form['subject'],
+            request.form['mess'])
+        try:
+            mail.send(msg)
+            msg = "We will respond as soon as possible."
+            category = "success"
+        except Exception as err:
+            msg = str(err)
+            category = "danger"
 
+        resp = {'feedback': msg, 'category': category}
+        return make_response(jsonify(resp), 200)
+
+        return render_template('contacts.html')
+    #
     # name=request.form('youname')
     # email=request.form('email')
     # subject=request.form('subject')
