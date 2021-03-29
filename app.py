@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request, jsonify
 from flask_mail import Mail, Message
-app = create_app()
+# app = create_app()
 app =Flask(__name__)
 
 # app.config['MAILL_SERVER']='smtp.googlemail.com'
@@ -74,6 +74,5 @@ def contacs():
     # server=smtplib.SMTP('smtp.gmmail.com', 587)
     # server.starttls()
 if __name__ == '__main__':
-    # port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug = True, host = '0.0.0.0')
     # app.run(debug=True  )
