@@ -89,7 +89,10 @@ body {
   text-align: center;
   border-radius: 2px;
   align-items: center;
+  margin-top: 6px;
+  padding: 10px;
 }
+
 .nav a{
   padding: 10px 20px;
   margin-left: 10px;
