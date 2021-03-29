@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request, jsonify
 from flask_mail import Mail, Message
-
+app = create_app()
 app =Flask(__name__)
 
 # app.config['MAILL_SERVER']='smtp.googlemail.com'
