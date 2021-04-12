@@ -1,0 +1,58 @@
+section.contact-us {
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: start;
+}
+
+section.contact-us div {
+    max-width: 50%;
+    width: 100%;
+}
+
+ul.ca-ul {
+    margin-left: 30px;
+    font-size: 22px;
+}
+
+ul.ca-ul p {
+    display: flex;
+    align-items: center;
+}
+
+section.input-area {
+    max-width: 60%;
+    width: 100%;
+}
+
+section.input-area p.name-email {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.input-area p.subject input, section.input-area p textarea {
+    max-width: 100%;
+    width: 100%;
+}
+
+section.input-area textarea {
+    font-family: inherit;
+}
+
+section.input-area input, section.input-area textarea {
+    padding: 9px 0px 9px 7px;
+    background-color: rgba(196, 196, 196, 0.34);
+    border: 0;
+    border-radius: 4px;
+}
+
+section.input-area input::placeholder, section.input-area textarea::placeholder {
+    color: black;
+}
+
+section.input-area p button {
+    background-color: var(--green);
+    color: white;
+    border-radius: 25px;
+    padding: 5px 30px;
+    font-size: 17px;
+}

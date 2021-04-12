@@ -1,0 +1,85 @@
+/* .t {
+    height: 40vh;
+    background: url(https://houseoflv.herokuapp.com/static/img/slider/1.jpg) 100%/contain no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+.carousel-img {
+    height: 40vh;
+}
+.carousel-img img {
+    height: 40vh;
+    /* width: 100%; */
+}
+
+p.section-p {
+    font-size: 30px;
+    max-width: 30%;
+}
+section.about {
+    padding-bottom: 50px;
+}
+section.about p {
+    margin-right: 30px;
+}
+
+section.video iframe {
+    width: 100%;
+    height: 600px;
+}
+
+section.needs .donate {
+    margin-left: 30px;
+}
+section.needs .donate p:not(:first-child) {
+    text-align: center;
+}
+section.needs .donate p:first-child {
+    font-size: 30px;
+}
+.donate-btn {
+    padding: 8px 70px;
+    border-radius: 25px;
+    font-size: 23px;
+    border: 0;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+section.media {
+    padding-bottom: 100px;
+}
+section.media ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.media ul li {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #E8DC92;
+}
+section.media ul li:not(:last-child) {
+    margin-right: 50px;
+}
+section.media ul li h2 {
+    font-size: 30px;
+    width: 100%;
+}
+section.media ul li p {
+    width: 100%;
+}
+
+
+
+a.read-more {
+    color: var(--blue);
+    font-size: 19px;
+    font-weight: bold;
+}
