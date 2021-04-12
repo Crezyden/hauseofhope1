@@ -16,3 +16,21 @@ app.use(cors());
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build/index.html'));
 });
+
+function KeepAlive() {
+    setInterval(() => {
+        let options = {
+            host: 'hoh2.herokuapp.com/',
+            port: 80,
+            path: '/'
+        };
+        http.get(options, res => {
+            res.on('data', () => {
+                return true;
+            });
+        }).on('error', err => {
+            console.log('HEROKU ERROR: ', err.message);
+        });
+    }, 20 * 60 * 1000);
+}
+KeepAlive();
