@@ -6,7 +6,6 @@ const express = require('express'),
     port = process.env.PORT || 8080,
     server = app.listen(port);
 
-// app.use(express.static(__dirname, 'public'));
 app.use(express.static(path.join(__dirname, '../build')));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
